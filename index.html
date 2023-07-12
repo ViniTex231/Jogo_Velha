@@ -7,8 +7,40 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Bem vindo ao Jogo da Velha!</h1>
+    </header>
 
+    <section id="desc">
+        <div>O jogo da velha consiste em formar 3 icones iguais em linhas ou colunas</div>
+    </section>
+
+    <div class="container">
+        <table class="jogo" border="2">
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+        </table>
+        
+    </div>
+    <button onclick="reiniciar()">Reiniciar</button>
+    <footer>
+        <p>&copy; AlemãoDev</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
